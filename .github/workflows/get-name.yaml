@@ -8,6 +8,8 @@ jobs:
   report-references:
     runs-on: ubuntu-latest # note to self: find a real, debian, runner
     steps:
+      - name: Checkout out the repository itself
+        uses: actions/checkout@v4
       - name: Get the listing of the GITHUB_WORKSPACE
         run: ls -la $GITHUB_WORKSPACE
       - name: Report the references
