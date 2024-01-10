@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo "GITHUB_REF: $GITHUB_REF"
+echo "GITHUB_REF_NAME: $GITHUB_REF_NAME"
