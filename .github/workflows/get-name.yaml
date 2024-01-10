@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest # note to self: find a real, debian, runner
     steps:
       - name: Report the references
-        run: echo "GITHUB_REF=$GITHUB_REF\nGITHUB_REF_NAME-$GITHUB_REF_NAME"
+        run: 'echo "GITHUB_REF: $GITHUB_REF; echo "GITHUB_REF_NAME: $GITHUB_REF_NAME"'
