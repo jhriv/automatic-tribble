@@ -20,3 +20,5 @@ jobs:
         run: echo "K8S_DEPLOY_ENVIRONMENT=$($GITHUB_WORKSPACE/.github/workflows/get-k8s-environment.sh)" >> "$GITHUB_ENV"
       - name: Report the k8s env
         run: echo K8S_DEPLOY_ENVIRONMENT=$K8S_DEPLOY_ENVIRONMENT
+      - name: Report, using env.K8S_DEPLOY_ENVIRONMENT
+        run: echo K8S_DEPLOY_ENVIRONMENT=${{ env.K8S_DEPLOY_ENVIRONMENT }}
